@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import {MONGO_CONNECTION_URL} from "./index";
+const mongoose = require("mongoose");
+const {MONGO_CONNECTION_URL} = require("./index");
 mongoose.connect(MONGO_CONNECTION_URL);
 
 const db = mongoose.connection;
@@ -10,4 +10,4 @@ db.once('open', function(){
     console.log("Successfully Connected to DB!");
 });
 
-export default db;
+module.exports =  db;

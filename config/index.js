@@ -1,6 +1,6 @@
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 
 dotenv.config();
 
 const {APP_PORT, MONGO_CONNECTION_URL} = process.env;
-export {APP_PORT, MONGO_CONNECTION_URL};
+module.exports =  {APP_PORT, MONGO_CONNECTION_URL};

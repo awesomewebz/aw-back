@@ -1,7 +1,7 @@
-import express from "express";
-import { APP_PORT } from "./config";
-import db from "./config/mongoose";
-import Contact from "./models/contact";
+const express = require("express");
+const { APP_PORT }  = require("./config");
+const db = require("./config/mongoose");
+const Contact = require("./models/contact");
 
 const app = express();
 
