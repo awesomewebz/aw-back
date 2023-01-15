@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AwesomeWebz | About Us</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body class="scroll-smooth">
+    <!-- header starts -->
+    <header>
+        <nav id="nav" class="shadow lg:h-16  h-12">
+            <div class="container mx-auto flex items-center font-awBrand justify-between">
+                <a href="/">
+                    <div class="flex  items-center ml-2">
+                        <img class="lg:h-12 h-8 w-8 lg:w-12 mt-2 rounded-full" src="./img/logo.png" alt="aw-logo">
+                        <div class="text-aw-500 font-medium mt-2 ml-1 text-xl tracking-wide">wesomeWebz</div>
+                    </div>
+                </a>
+
+                <div id="nav-item" class="flex text-aw-500 items-center">
+                    <ul class="flex font-medium font-awBrand">
+                        <a href="/about">
+                            <li class="nav-item">About Us</li>
+                        </a>
+                        <a href="/#contact">
+                            <li class="nav-item">Contact Us</li>
+                        </a>
+                        <a href="/#services">
+                            <li class="nav-item">Services</li>
+                        </a>
+                        <a href="/#techStack">
+                            <li class="nav-item">Technology Stack</li>
+                        </a>
+                    </ul>
+
+                    <a href="/#contact">
+                        <button class="btn btn-primary ml-20 ">
+                            Start Project
+                        </button>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </nav>
+
+
+        <!-- mobile view -->
+        <div id="hamIcon" class="absolute top-4 right-5 cursor-pointer">
+            <div class="w-6 bg-gray-600 h-0.5 mb-1"></div>
+            <div class="w-6 bg-gray-600 h-0.5 mb-1"></div>
+            <div class="w-6 bg-gray-600 h-0.5 mb-1"></div>
+
+        </div>
+        <div id="crossIcon" class=" hidden absolute top-4 right-5 cursor-pointer">
+            <img class="w-6" src="./img/cross.svg" alt="cross">
+        </div>
+        <div style="z-index: 1000;" id="mobileMenu" class="text-white absolute right-0 -top-full  w-1/2 bg-aw-500 rounded-2xl py-4 text-center  transition-all ease-in-out duration-300">
+            
+            <ul class="font-medium font-awBrand">
+                <a href="/about">
+                    <li class="mb-4">About Us</li>
+                </a>
+                <a href="/#contact">
+                    <li class="mb-4">Contact Us</li>
+                </a>
+                <a href="/#services">
+                    <li class="mb-4">Services</li>
+                </a>
+                <a href="/#techStack">
+                    <li class="mb-4">Technology Stack</li>
+                </a>
+            </ul>
+
+           <a href="/#contact">
+            <button class="btn bg-white text-aw-500 hover:bg-slate-100">
+                Start Project
+            </button>
+           </a>
+        </div>
+    </header>
+
+    <section class="opacity-80 bg-[url('/img/about.jpg')] h-40 lg:h-64 bg-center bg-cover">
+       <h1 class="text-white pt-14 lg:pt-20 font-awBrand font-bold text-2xl lg:text-6xl text-center">About Us</h1>
+    </section>
+
+    <div class="container mx-auto my-10 px-4">
+        <p class="text-lg lg:text-xl text-aw-300 text-justify mb-6">
+            Awesomewebz is on the mission of digital transformation that helps to make your presence online , so you can compete with big giants in the market and create an impact . We use new technologies to customize the work that will stand out from the crowd.
+        </p>
+        <h4 class="text-aw-400 font-awBrand text-xl font-bold mb-2">Our mission</h4>
+        <p class="text-lg lg:text-xl text-aw-300 text-justify mb-6">
+            To bring innovation in business through technology and help them to make their presence online.
+        </p>
+
+        <h4 class="text-aw-400 font-awBrand text-xl font-bold mb-2">Our vision </h4>
+        <p class="text-lg lg:text-xl text-aw-300 text-justify mb-6">
+            Our vision is to help business to make their presence online and create an impact with all new technologies at affordable cost.
+        </p>
+
+        <h4 class="text-aw-400 font-awBrand text-xl font-bold mb-2">Services offered </h4>
+        
+           <ul class="text-lg lg:text-xl text-aw-300 mb-6">
+            <li>Web Application Development</li>
+            <li>Website Development</li>
+            <li>Android App Development</li>
+            <li>Software Development</li>
+           </ul>
+       
+
+        <h4 class="text-aw-400 font-awBrand text-xl font-bold mb-2">Why Us</h4>
+        <p class="text-lg lg:text-xl text-aw-300 text-justify">
+            We provide customized website Applications/ Android apps according to your needs. <br>
+            We use new technologies for a better outcome. <br>
+            We provide all this at a very affordable cost. <br>
+        </p>
+    </div>
+
+    
+
+    <!-- footer -->
+    <footer class="py-3 bg-aw-500 text-white">
+        <div class="w-16 mx-auto mb-2">
+            <img class="w-full rounded-full border border-slate-50" src="./img/logo.png" alt="AwesomeWebz">
+        </div>
+        <h2 class="text-center text-lg mb-2">AwesomeWebz</h2>
+        <p class="text-center text-slate-400">copyright &copy; 2023 | all right reserved <a href="https://www.awesomewebz.com">awesomeWebz</a> </p>
+    </footer>
+
+
+    <script src="./js/nav.js"></script>
+</body>
+
+</html>
